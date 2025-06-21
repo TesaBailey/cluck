@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 10% 98%;
+    --foreground: 40 9% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 40 9% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 40 9% 20%;
+
+    --primary: 92 54% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 32 66% 65%;
+    --secondary-foreground: 40 9% 20%;
+
+    --muted: 60 10% 92%;
+    --muted-foreground: 40 8% 46%;
+
+    --accent: 32 66% 65%;
+    --accent-foreground: 40 9% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 8% 86%;
+    --input: 40 8% 86%;
+    --ring: 92 54% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 92 54% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 92 54% 50%;
+  }
+
+  .dark {
+    --background: 40 9% 12%;
+    --foreground: 60 10% 98%;
+
+    --card: 40 9% 15%;
+    --card-foreground: 60 10% 98%;
+
+    --popover: 40 9% 15%;
+    --popover-foreground: 60 10% 98%;
+
+    --primary: 92 54% 45%;
+    --primary-foreground: 40 9% 12%;
+
+    --secondary: 32 50% 50%;
+    --secondary-foreground: 60 10% 98%;
+
+    --muted: 40 9% 25%;
+    --muted-foreground: 40 8% 70%;
+
+    --accent: 32 50% 50%;
+    --accent-foreground: 60 10% 98%;
+
+    --destructive: 0 62.8% 40.6%;
+    --destructive-foreground: 60 10% 98%;
+
+    --border: 40 9% 25%;
+    --input: 40 9% 25%;
+    --ring: 92 54% 45%;
+    
+    --sidebar-background: 40 9% 15%;
+    --sidebar-foreground: 60 10% 92%;
+    --sidebar-primary: 92 54% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 9% 25%;
+    --sidebar-accent-foreground: 60 10% 92%;
+    --sidebar-border: 40 9% 25%;
+    --sidebar-ring: 92 54% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.stat-card {
+  @apply flex flex-col justify-between p-6 bg-white rounded-lg shadow-md border border-farm-brown/10 hover:shadow-lg transition-shadow;
+}
+
+.chart-container {
+  @apply w-full bg-white p-6 rounded-lg shadow-md border border-farm-brown/10;
+}
