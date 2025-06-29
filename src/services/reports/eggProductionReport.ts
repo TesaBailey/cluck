@@ -1,4 +1,4 @@
-import { supabase } from "@/integrations/supabase/client";
+import { supabase } from "@/lib/supabase";
 import { EggProductionData, EggProductionReport, EggCollectionRecord } from "@/types";
 import { format, parseISO } from "date-fns";
 
